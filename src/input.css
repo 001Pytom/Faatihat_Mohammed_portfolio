@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes animateText {
+  0%,
+  95%,
+  100% {
+    background-position: -410px 0;
+  }
+  65%,
+  85% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+header.sticky {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), #5d3fd3);
+  border-bottom: 1px solid #ffffff19;
+  z-index: 1000;
+}
+
+.show {
+  display: flex;
+  transition: right 0.9s ease-in-out;
+  animation: slideIn 0.5s forwards;
+}
+
+/*  */
+.nav-list a::after {
+  content: " ";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #5d3fd3;
+  bottom: -3px;
+  left: 0;
+  transition: ease 0.4s;
+}
+
+.nav-list a:hover::after {
+  width: 100%;
+}
+
+.transf {
+  transform: scale(1.1);
+}
+
+.flow {
+  color: transparent;
+  background-image: linear-gradient(#5d3fd3, #5d3fd3);
+  background-repeat: no-repeat;
+  background-clip: text;
+  animation: animateText 5s linear infinite;
+}
+
+.mygrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  align-items: center;
+  gap: 4.5rem;
+  margin-top: 5rem;
+}
+
+.linear-grad {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), #5d3fd3);
+}
+
+.row:hover .layer {
+  height: 100%;
+  transition: 0.5s;
+}
+.row:hover img {
+  transform: scale(1.1);
+}
+
+.contact_inner {
+  position: relative;
+  height: 50%;
+  z-index: 1000;
+  background-color: #5d3fd3;
+  color: #fff;
+}
+
+.contact_inner:hover {
+  transition: all 0.7s;
+  cursor: grab;
+}
+
+.contact_inner::before {
+  content: " ";
+  position: absolute;
+  background-image: url(/images/fatihat.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.05;
+  inset: 0;
+}

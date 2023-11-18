@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faatihat Portfolio</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="bg-black text-white relative">
+    <!-- mobile -->
+    <div class="menu-items-mobile hidden  w-1/2 h-screen absolute  left-0 top-14 z-50 flex-col p-10 bg-black">
+        <button id="menu-close" class=" menu-closed flex  justify-end"><i class='bx bx-x'></i></button>
+        <ul class=" flex flex-col text-lg font-medium  z-30  gap-10  w-full">
+            <li class="nav-list text-purple  text-lg  border-purple border-b-2  pb-5"><a href="#home">Home</a></li>
+            <li class="nav-list  text-lg border-b-2 border-purple  pb-5"><a href="#skills">Expertise</a></li>
+            <li class="nav-list  text-lg  border-b-2 border-purple pb-5"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-list text-lg  border-b-2 border-purple pb-5"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- mobile -->
+
+    <!-- header  -->
+    <header id="header"
+        class="container flex justify-between items-center  py-6 bg-transparent w-full  px-[12%] mx-auto z-30  fixed  top-0 left-0 right-0   ">
+
+
+        <div class="text-3xl font-bold tracking-wider cursor-pointer hover:transform hover:scale-125 duration-[.7s]">
+            T<span class="text-purple">EE</span>HAT
+        </div>
+        <ul class="hidden lg:flex text-lg font-medium space-x-16 ">
+            <li class="nav-list text-purple relative "><a href="#home">Home</a></li>
+            <li class="nav-list relative"><a href="#skills">Expertise</a></li>
+            <li class="nav-list relative"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-list relative"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="icons hidden md:flex gap-5  ">
+            <div
+                class="h-9 w-9 bg-purple rounded-full flex items-center justify-center hover:bg-white hover:text-purple transition duration-[.5s]">
+                <a href="https://www.linkedin.com/in/faatihat-mohammed-56aa94238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <div
+                class="h-9 w-9 bg-purple rounded-full flex items-center justify-center hover:bg-white hover:text-purple transition duration-[.5s]">
+                <a href="https://twitter.com/001PyTom?t=FBfEDRZftWhVR0bsrXiWcQ&s=09" target="_blank"><i
+                        class='bx bxl-twitter'></i></a>
+            </div>
+
+            <div
+                class="h-9 w-9 bg-purple rounded-full flex items-center justify-center hover:bg-white hover:text-purple transition duration-[.5s]">
+                <a href="https://github.com/001Pytom?tab=repositories" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+
+        <div id="menu-toggle" class=" flex text-4xl font-bold  text-purple lg:hidden" href="#"><i
+                class='bx bx-menu-alt-right'></i></div>
+    </header>
+
+    <!-- home -->
+    <section id="home"
+        class="home container w-full h-screen flex justify-center items-center  mx-auto  px-4 lg:px-0 mb-5 lg:mb-0">
+        <div
+            class="home-contents container  flex flex-col-reverse md:flex-row  items-center justify-center md:justify-between gap-[4rem] lg:gap-[8rem]  h-screen w-full lg:w-[75vw]">
+            <div class="home-text  flex flex-col gap-1 md:gap-5 w-full md:w-auto ">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">HELLO!</h2>
+                <div> <span class="text-3xl md:text-4xl lg:text-5xl font-bold">I'm <span
+                            class="text-3xl md:text-4xl lg:text-5xl font-bold text-purple   flow">FAATIHAT
+                        </span></span></div>
+                <span class="text-3xl md:text-4xl lg:text-5xl">A Front-End Developer</span>
+                <p class="max-w-[500px]">Based in Nigeria. I'm incredibly passionate about creating accessible and user
+                    friendly web
+                    applications.With my skills,experience and passion , i am confident in my ability to deliver
+                    exceptional results.
+                </p>
+            </div>
+
+            <!-- desktop -->
+            <div class=" flex justify-center items-center  ">
+                <img class="hidden md:block w-80 h-full rounded-2xl " src="./images/fatihat.JPG" alt="">
+                <!-- mobile -->
+                <img class="w-screen  h-full    md:hidden" src="./images/fatihat.JPG" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- about -->
+
+    <section class="about container w-full h-screen flex justify-center items-center  mx-auto  px-4 md:px-0">
+        <div
+            class="flex flex-col-reverse lg:flex-row gap-10  items-center justify-center md:justify-between w-full md:gap-0 md:w-[75vw] h-full mx-auto">
+            <div class="order-2 lg:order-1 w-full lg:w-80 flex items-center justify-center">
+                <img src="./images/fatihat.JPG" alt="Profile Image"
+                    class="w-80 md:w-full  h-full object-cover rounded-full transform transition-transform hover:scale-105 ">
+            </div>
+            <div class="order-1 lg:order-2 w-full lg:w-2/5 p-8">
+                <h1 class="text-4xl font-bold mb-4 text-purple">About Me</h1>
+                <p class="text-white  text-justify md:text-left">
+                    Hello! I'm Faatihat Mohammed, an aspiring <span class="text-purple">Software Developer.</span> My
+                    programming journey
+                    began with
+                    Python Programning language, leading me to choose a career path in software development. <br> <br>
+                    Currently,I
+                    specialize in <span class="text-purple">front-end development</span> , utilizing HTML, CSS,
+                    Tailwind, and JavaScript to
+                    craft engaging
+                    digital experiences. Beyond coding, I enjoy building and cloning websites to continuously refine my
+                    skills. Let's connect and turn ideas into reality together!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio -->
+    <section id="portfolio" class="portfolio container w-full mx-auto text-center pb-5 pr-10 md:pr-0">
+        <p class="text-purple text-lg font-bold">PORTFOLIO</p>
+        <div class="text-5xl">MY PROJECTS</div>
+        <div class="portfolio_content mygrid w-[75vw]  mx-auto">
+            <div class="row relative overflow-hidden cursor-pointer rounded-md">
+                <img class="w-full rounded-md block transition duration-[1s]" src="./images/proj1.png" alt="">
+
+                <div
+                    class="layer absolute w-full h-0  rounded-md left-0 bottom-0 overflow-hidden flex flex-col gap-3 items-center justify-center text-center px-10 transition duration-[0.5s]  linear-grad  ">
+                    <h5 class="text-3xl font-semibold">TODO WEB APP</h5>
+                    <p>HTML CSS JAVASRIPT</p>
+                    <div class="h-10 w-10 flex items-center justify-center rounded-full bg-white text-purple"><a
+                            href="https://teehattodoapp--fatihatmohammed.repl.co/" target="_blank"><i
+                                class='bx bx-link-external'></i></a></div>
+                </div>
+            </div>
+
+            <div class="row relative overflow-hidden cursor-pointer rounded-md">
+                <img class="w-full rounded-md block transition duration-[1s] p-5 " src="./images/proj5.png" alt="">
+
+                <div
+                    class="layer absolute w-full h-0 rounded-md left-0 bottom-0 overflow-hidden flex items-center justify-center text-center px-10 transition duration-[0.5s] flex-col linear-grad  gap-3">
+                    <h5 class="text-3xl font-semibold">E-COMMERCE MAIN PAGE</h5>
+                    <p>HTML TAILWINDCSS JAVASRIPT</p>
+                    <div class="h-10 w-10 flex items-center justify-center rounded-full bg-white text-purple"><a
+                            href="https://frontend-mentor-e-commerce-omega.vercel.app/ " target="_blank"><i
+                                class='bx bx-link-external'></i></a></div>
+                </div>
+            </div>
+
+            <div class="row relative overflow-hidden cursor-pointer rounded-md">
+                <img class="w-full rounded-md block transition duration-[1s]" src="./images/proj3.png" alt="">
+
+                <div
+                    class="layer absolute w-full h-0  rounded-md left-0 bottom-0 overflow-hidden flex items-center justify-center text-center px-10 transition duration-[0.5s] flex-col linear-grad  gap-3">
+                    <h5 class="text-3xl font-semibold">BOOK SALES WEBSITE</h5>
+                    <p>HTML TAILWINDCSS JAVASRIPT</p>
+                    <div class="h-10 w-10 flex items-center justify-center rounded-full bg-white text-purple"><a
+                            href="https://design-challenge-lovat.vercel.app/" target="_blank"><i
+                                class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row relative overflow-hidden cursor-pointer rounded-md">
+                <img class="w-full rounded-md block transition duration-[1s]" src="./images/proj4.png" alt="">
+
+                <div
+                    class="layer absolute w-full h-0  rounded-md left-0 bottom-0 overflow-hidden flex items-center justify-center text-center px-10 transition duration-[0.5s] flex-col linear-grad  gap-3">
+                    <h5 class="text-3xl font-semibold">THE BOX LANDING PAGE</h5>
+                    <p>HTML TAILWINDCSS JAVASRIPT</p>
+
+                    <div class="h-10 w-10 flex items-center justify-center rounded-full bg-white text-purple"><a
+                            href="https://project-box-nu.vercel.app/" target=" _blank"><i
+                                class='bx bx-link-external'></i></a></div>
+                </div>
+            </div>
+
+            <div class="row relative overflow-hidden cursor-pointer rounded-md">
+                <img class="w-full rounded-md block transition duration-[1s]" src="./images/proj2.png" alt="">
+
+                <div
+                    class="layer absolute w-full h-0  rounded-md left-0 bottom-0 overflow-hidden flex items-center justify-center text-center px-10 transition duration-[0.5s] flex-col linear-grad  gap-3">
+                    <h5 class="text-3xl font-semibold">INTRO-SECTION</h5>
+                    <p>HTML TAILWINDCSS JAVASRIPT</p>
+                    <div class="h-10 w-10 flex items-center justify-center rounded-full bg-white text-purple"><a
+                            href="https://front-end-mentor-intro-sction.vercel.app/ " target="_blank "><i
+                                class='bx bx-link-external'></i></a></div>
+                </div>
+            </div>
+
+            <div class="row relative overflow-hidden cursor-pointer rounded-md">
+                <img class="w-full rounded-md block transition duration-[1s]" src="./images/proj7.png" alt="">
+
+                <div
+                    class="layer absolute w-full h-0  rounded-md left-0 bottom-0 overflow-hidden flex items-center justify-center text-center px-10 transition duration-[0.5s] flex-col linear-grad  gap-3">
+                    <h5 class="text-3xl font-semibold">LANDING PAGE</h5>
+                    <p>HTML CSS</p>
+                    <div class="h-10 w-10 flex items-center justify-center rounded-full bg-white text-purple"><a
+                            href="https://www.linkedin.com/posts/faatihat-mohammed-56aa94238_project-html-css-activity-7082409079402356736-ZDDe?utm_source=share&utm_medium=member_android"
+                            target="_blank"><i class='bx bx-link-external'></i></a></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact w-full h-[80vh] mx-auto flex items-center justify-center ">
+        <div class="contact_inner flex justify-evenly items-center flex-col w-full md:w-[75vw]">
+            <P class="text-xl md:text-3xl isolate text-center">I would love to hear about your project and how i could
+                help.</P>
+            <div class="icons flex gap-5   isolate">
+                <div
+                    class="h-9 w-9 bg-white text-purple rounded-full flex items-center justify-center hover:bg-purple hover:text-white transition duration-[.5s]">
+                    <a href="https://www.linkedin.com/in/faatihat-mohammed-56aa94238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank"><i class='bx bxl-linkedin'></i></a>
+                </div>
+                <div
+                    class="h-9 w-9 bg-purple rounded-full flex items-center justify-center hover:bg-white hover:text-purple transition duration-[.5s]">
+                    <a href="https://twitter.com/001PyTom?t=FBfEDRZftWhVR0bsrXiWcQ&s=09" target="_blank"><i
+                            class='bx bxl-twitter'></i></a>
+                </div>
+                <div
+                    class="h-9 w-9 bg-purple rounded-full flex items-center justify-center hover:bg-white hover:text-purple transition duration-[.5s]">
+                    <a href="mailto:email@mohammedfaatihat@gmail.com" target="_blank"><i
+                            class='bx bxl-gmail'></i></i></a>
+                </div>
+                <div
+                    class="h-9 w-9 bg-purple rounded-full flex items-center justify-center hover:bg-white hover:text-purple transition duration-[.5s]">
+                    <a href="https://wa.me/08145690268" target="_blank"><i class='bx bxl-whatsapp'></i></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-800 text-white container mx-auto h-[10vh] ">
+        <div class="w-full md:w-[75vw] mx-auto flex justify-between  h-full items-center px-2">
+            <span class="text-sm">FAATIHAT MOHAMMED</span>
+            <p class="text-sm">©Copyright © TEEHAT. All rights reserved.</p>
+
+            <div class="h-10 w-10 flex items-center justify-center rounded-full bg-white text-purple"><a href="#home"><i
+                        class='bx bx-up-arrow-alt'></i></a></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
