@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="bg-black text-white relative">
+<body class="bg-black text-white relative select-none">
     <!-- mobile -->
     <div class="menu-items-mobile hidden  w-1/2 h-screen absolute  left-0 top-14 z-50 flex-col p-10 bg-black">
         <button id="menu-close" class=" menu-closed flex  justify-end"><i class='bx bx-x'></i></button>
@@ -37,8 +37,8 @@
         <div class="text-3xl font-bold tracking-wider cursor-pointer hover:transform hover:scale-125 duration-[.7s]">
             T<span class="text-purple">EE</span>HAT
         </div>
-        <ul class="hidden lg:flex text-lg font-medium space-x-16 ">
-            <li class="nav-list text-purple relative "><a href="#home">Home</a></li>
+        <ul class="hidden lg:flex text-base font-medium space-x-16 ">
+            <li class="nav-list  relative "><a href="#home">Home</a></li>
             <li class="nav-list relative"><a href="#skills">Expertise</a></li>
             <li class="nav-list relative"><a href="#portfolio">Portfolio</a></li>
             <li class="nav-list relative"><a href="#contact">Contact</a></li>
@@ -46,9 +46,9 @@
 
         <div class="icons hidden md:flex gap-5  ">
             <div
-                class="h-9 w-9 bg-purple rounded-full flex items-center justify-center hover:bg-white hover:text-purple transition duration-[.5s]">
+                class="icon h-9 w-9 bg-purple rounded-full flex items-center justify-center hover:bg-white hover:text-purple transition duration-[.5s]">
                 <a href="https://www.linkedin.com/in/faatihat-mohammed-56aa94238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                    target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    target="_blank"><i class='bx bxl-linkedin '></i></a>
             </div>
             <div
                 class="h-9 w-9 bg-purple rounded-full flex items-center justify-center hover:bg-white hover:text-purple transition duration-[.5s]">
@@ -72,60 +72,36 @@
         <div
             class="home-contents container  flex flex-col-reverse md:flex-row  items-center justify-center md:justify-between gap-[4rem] lg:gap-[8rem]  h-screen w-full lg:w-[75vw]">
             <div class="home-text  flex flex-col gap-1 md:gap-5 w-full md:w-auto ">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">HELLO!</h2>
-                <div> <span class="text-3xl md:text-4xl lg:text-5xl font-bold">I'm <span
-                            class="text-3xl md:text-4xl lg:text-5xl font-bold text-purple   flow">FAATIHAT
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold flow">HELLO!</h2>
+                <div> <span class="text-3xl md:text-4xl lg:text-5xl font-bold ">I'm <span
+                            class="text-3xl md:text-4xl lg:text-5xl font-bold text-purple  ">FAATIHAT
                         </span></span></div>
-                <span class="text-3xl md:text-4xl lg:text-5xl">A Front-End Developer</span>
-                <p class="max-w-[500px]">Based in Nigeria. I'm incredibly passionate about creating accessible and user
-                    friendly web
-                    applications.With my skills,experience and passion , i am confident in my ability to deliver
-                    exceptional results.
+                <span class="text-3xl md:text-4xl lg:text-5xl"> A Web Application Developer</span>
+                <p class="max-w-[500px]"> I'm passionate about creating accessible and user friendly Web Solutions.
+                    My journey began with Python Programning language, leading me to choose a career path in software
+                    development. Currently, I specialize in
+                    front-end development ,utilizing tools and technologies such as HTML, CSS, Tailwind, and JavaScript
+                    and React to craft scalable digital experiences.
                 </p>
             </div>
 
             <!-- desktop -->
-            <div class=" flex justify-center items-center  ">
+            <div class="photo relative flex justify-center items-center   cursor-grab">
                 <img class="hidden md:block w-80 h-full rounded-2xl " src="./images/fatihat.JPG" alt="">
                 <!-- mobile -->
                 <img class="w-screen  h-full    md:hidden" src="./images/fatihat.JPG" alt="">
-            </div>
 
-        </div>
+                <div class="glow-wrap">
+                    <i class="glow"></i>
+                </div>
+
+            </div>
     </section>
 
 
-
-
-    <!-- about -->
-
-    <section class="about container w-full h-screen flex justify-center items-center  mx-auto  px-4 md:px-0">
-        <div
-            class="flex flex-col-reverse lg:flex-row gap-10  items-center justify-center md:justify-between w-full md:gap-0 md:w-[75vw] h-full mx-auto">
-            <div class="order-2 lg:order-1 w-full lg:w-80 flex items-center justify-center">
-                <img src="./images/fatihat.JPG" alt="Profile Image"
-                    class="w-80 md:w-full  h-full object-cover rounded-full transform transition-transform hover:scale-105 ">
-            </div>
-            <div class="order-1 lg:order-2 w-full lg:w-2/5 p-8">
-                <h1 class="text-4xl font-bold mb-4 text-purple">About Me</h1>
-                <p class="text-white  text-justify md:text-left">
-                    Hello! I'm Faatihat Mohammed, an aspiring <span class="text-purple">Software Developer.</span> My
-                    programming journey
-                    began with
-                    Python Programning language, leading me to choose a career path in software development. <br> <br>
-                    Currently,I
-                    specialize in <span class="text-purple">front-end development</span> , utilizing HTML, CSS,
-                    Tailwind, and JavaScript to
-                    craft engaging
-                    digital experiences. Beyond coding, I enjoy building and cloning websites to continuously refine my
-                    skills. Let's connect and turn ideas into reality together!
-                </p>
-            </div>
-        </div>
-    </section>
 
     <!-- portfolio -->
-    <section id="portfolio" class="portfolio container w-full mx-auto text-center pb-5 pr-10 md:pr-0">
+    <section id="portfolio" class="portfolio container w-full mx-auto text-center mt-12 md:mt-0 pr-10 md:pr-0">
         <p class="text-purple text-lg font-bold">PORTFOLIO</p>
         <div class="text-5xl">MY PROJECTS</div>
         <div class="portfolio_content mygrid w-[75vw]  mx-auto">
@@ -212,12 +188,52 @@
         </div>
     </section>
 
+    <!-- skills -->
+    <div id="skills"
+        class="skills container w-full h-[60vh] mx-auto flex flex-col gap-10 md:gap-20 items-center justify-center  text-center mt-12 md:mt-0">
+        <div>
+            <p class="text-purple text-lg font-bold">SKILLS</p>
+            <div class="text-2xl md:text-3xl lg:text-5xl">Tools and Technologies I Use</div>
+        </div>
+        <div
+            class="flex  w-full md:w-[75vw] justify-center lg:justify-between  items-center flex-wrap p-5 md:p-0 gap-10">
+            <div class="skills-inner">
+                <div class="skilss-anime text-purple">
+                    <h3 class="text-2xl font-bold">HTML</h3>
+                    <div class=" text-4xl "><i class='bx bxl-html5 '></i></div>
+                </div>
+            </div>
+
+            <div class="skills-inner">
+                <div class="skilss-anime text-purple">
+                    <h3 class="text-2xl font-bold">CSS</h3>
+                    <div class=" text-4xl "><i class='bx bxl-css3'></i></div>
+                </div>
+            </div>
+
+            <div class="skills-inner">
+                <div class="skilss-anime text-purple">
+                    <h3 class="text-2xl font-bold">Tailwind</h3>
+                    <div class=" text-4xl "><i class='bx bxl-tailwind-css'></i></div>
+                </div>
+            </div>
+
+            <div class="skills-inner">
+                <div class="skilss-anime text-purple">
+                    <h3 class="text-2xl font-bold">JavaScript</h3>
+                    <div class=" text-4xl "><i class='bx bxl-javascript'></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- contact -->
-    <section class="contact w-full h-[80vh] mx-auto flex items-center justify-center ">
-        <div class="contact_inner flex justify-evenly items-center flex-col w-full md:w-[75vw]">
-            <P class="text-xl md:text-3xl isolate text-center">I would love to hear about your project and how i could
-                help.</P>
-            <div class="icons flex gap-5   isolate">
+    <section class="contact container w-full h-[80vh] mx-auto flex items-center justify-center ">
+        <div class="contact_inner flex justify-evenly items-center flex-col w-full md:w-[75vw] rounded-md">
+            <P class="text-xl md:text-3xl isolate text-center">I Would Love to Hear About Your Project and How I Could
+                Help. <br>
+                Let's Connect and Turn Ideas Into Reality Together!.
+            </P>
+            <div class="icons flex gap-5  isolate">
                 <div
                     class="h-9 w-9 bg-white text-purple rounded-full flex items-center justify-center hover:bg-purple hover:text-white transition duration-[.5s]">
                     <a href="https://www.linkedin.com/in/faatihat-mohammed-56aa94238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -232,10 +248,6 @@
                     class="h-9 w-9 bg-purple rounded-full flex items-center justify-center hover:bg-white hover:text-purple transition duration-[.5s]">
                     <a href="mailto:email@mohammedfaatihat@gmail.com" target="_blank"><i
                             class='bx bxl-gmail'></i></i></a>
-                </div>
-                <div
-                    class="h-9 w-9 bg-purple rounded-full flex items-center justify-center hover:bg-white hover:text-purple transition duration-[.5s]">
-                    <a href="https://wa.me/08145690268" target="_blank"><i class='bx bxl-whatsapp'></i></i></a>
                 </div>
             </div>
         </div>

@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @keyframes animateText {
   0%,
   95%,
   100% {
-    background-position: -410px 0;
+    background-position: -610px 0;
   }
   65%,
   85% {
@@ -23,9 +24,91 @@
   }
 }
 
+/* skills */
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
+}
+/* skills */
+
 header.sticky {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), #5d3fd3);
   border-bottom: 1px solid #ffffff19;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   z-index: 1000;
 }
 
@@ -105,4 +188,85 @@ header.sticky {
   background-size: cover;
   opacity: 0.05;
   inset: 0;
+}
+
+.bx {
+  position: relative;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+.icons a:hover .bx {
+  transform: rotateY(360deg);
+}
+
+/* skilss */
+.skilss-anime {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 1rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  transition: 1s box-shadow;
+}
+
+.skilss-anime:hover {
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+}
+
+.skilss-anime:hover::before,
+div:hover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 155px;
+  height: 155px;
+  border-radius: 1rem;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+.skilss-anime:hover:after {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), #5d3fd3);
+  animation: 2s counterclockwise infinite;
+}
+
+/* glow image */
+.photo .glow-wrap {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin-top: -10px;
+}
+
+.photo .glow {
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .glow {
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover img,
+.photo:hover .glow-wrap {
+  margin-top: 0;
 }

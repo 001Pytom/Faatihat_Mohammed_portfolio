@@ -12,3 +12,5 @@ const close = document.getElementById("menu-close");
 close.addEventListener("click", (e) => {
   document.querySelector(".menu-items-mobile").classList.remove("show");
 });
+
+
