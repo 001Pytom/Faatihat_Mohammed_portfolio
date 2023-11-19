@@ -240,7 +240,7 @@ div:hover::after {
 }
 
 /* glow image */
-.photo .glow-wrap {
+/* .photo .glow-wrap {
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -269,4 +269,4 @@ div:hover::after {
 .photo:hover img,
 .photo:hover .glow-wrap {
   margin-top: 0;
-}
+} */
