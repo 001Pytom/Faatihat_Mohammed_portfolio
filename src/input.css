@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @keyframes animateText {
   0%,
   95%,
@@ -101,6 +100,10 @@
     top: -5px;
     right: 0;
   }
+}
+
+img {
+  max-width: 100%;
 }
 /* skills */
 
